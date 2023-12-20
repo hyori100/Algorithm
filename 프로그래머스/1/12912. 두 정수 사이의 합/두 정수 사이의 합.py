@@ -5,7 +5,7 @@ def solution(a, b):
     elif a<b:
         s = range(a,b+1)
     else:
-        s = range(a,b-1,-1)
+        s = range(b,a+1)
 
     for i in s:
         answer.append(i)
