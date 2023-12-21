@@ -1,8 +1,8 @@
 def solution(absolutes, signs):
     answer = []
-    for index, value in enumerate(signs):
-        if value == False:
-            answer.append(absolutes[index] * -1)
+    for absolute,sign in zip(absolutes, signs):
+        if sign == False:
+            answer.append(absolute * -1)
         else:
-            answer.append(absolutes[index])
+            answer.append(absolute)
     return sum(answer)
