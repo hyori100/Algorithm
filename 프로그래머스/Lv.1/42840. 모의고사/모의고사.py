@@ -12,8 +12,6 @@ def solution(answers):
     person2 = person2 * (answerLen//len(person2)) + person2[:(answerLen%len(person2))]
     person3 = person3 * (answerLen//len(person3)) + person3[:(answerLen%len(person3))]
     
-    print(person1, person2, person3)
-    
     sum1 = sum([1 for i in np.equal(person1,answers) if i == True])
     sum2 = sum([1 for i in np.equal(person2,answers) if i == True])
     sum3 = sum([1 for i in np.equal(person3,answers) if i == True])
