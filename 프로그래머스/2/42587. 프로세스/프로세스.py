@@ -14,5 +14,3 @@ def solution(priorities, location):
             sequence += 1
             if idx == location:
                 return sequence
-        
-    
