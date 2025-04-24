@@ -20,8 +20,7 @@ def checkSequence(numbers, seq):
                 break
 
 for i in range(0,N):
-    _, targetSeq = map(int, sys.stdin.readline().split())
-    d = deque()
-    for idx, item in enumerate(list(map(int, sys.stdin.readline().split()))):
-        d.append((idx, item))
+    N, targetSeq = map(int, sys.stdin.readline().split())
+    numList = list(map(int, sys.stdin.readline().split()))
+    d = deque([(i, numList[i]) for i in range(N)])
     checkSequence(d, targetSeq)
