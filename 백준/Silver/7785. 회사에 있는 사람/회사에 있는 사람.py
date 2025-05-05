@@ -11,5 +11,5 @@ for i in range(logLen):
     elif action == "leave" and person in dict:
         dict.pop(person)
 
-for key, value in sorted(dict.items(), reverse=True):
+for key in sorted(dict, reverse=True):
     print(key)
